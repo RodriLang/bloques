@@ -1,4 +1,4 @@
-package tenis;
+package bloques;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-public class Tenis extends JFrame implements KeyListener, Runnable {
+public class Juego extends JFrame implements KeyListener, Runnable {
 
     private JPanel fondo;
     private static JLabel labelPuntaje;
@@ -38,7 +38,7 @@ public class Tenis extends JFrame implements KeyListener, Runnable {
 
     private ArrayList<Bloque> bloques;
 
-    public Tenis() {
+    public Juego() {
         inicializarAtributos();
         this.setVisible(true);
         this.setBounds(0, 0, ANCHO, ALTO);
@@ -86,7 +86,7 @@ public class Tenis extends JFrame implements KeyListener, Runnable {
     }
 
     public static void setLabelPuntaje(JLabel labelPuntaje) {
-        Tenis.labelPuntaje = labelPuntaje;
+        Juego.labelPuntaje = labelPuntaje;
     }
 
     public static JLabel getLabelTiempo() {
@@ -94,7 +94,7 @@ public class Tenis extends JFrame implements KeyListener, Runnable {
     }
 
     public static void setLabelTiempo(JLabel labelTiempo) {
-        Tenis.labelTiempo = labelTiempo;
+        Juego.labelTiempo = labelTiempo;
     }
 
     public static JLabel getLabelBolas() {
@@ -102,7 +102,7 @@ public class Tenis extends JFrame implements KeyListener, Runnable {
     }
 
     public static void setLabelBolas(JLabel labelBolas) {
-        Tenis.labelBolas = labelBolas;
+        Juego.labelBolas = labelBolas;
     }
 
     private void inicializarAtributos() {
@@ -140,7 +140,7 @@ public class Tenis extends JFrame implements KeyListener, Runnable {
     }
 
     public static void main(String[] args) {
-        new Tenis();
+        new Juego();
 
     }
 

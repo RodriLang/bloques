@@ -1,5 +1,5 @@
 
-package tenis;
+package bloques;
 
 import java.awt.Color;
 import javax.swing.JLabel;
